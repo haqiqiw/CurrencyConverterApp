@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.2611111111111111" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1875" />
+        <entry key="app/src/main/res/layout/currency_item.xml" value="0.4267474742924177" />
+        <entry key="app/src/main/res/layout/fragment_convert.xml" value="0.35104166666666664" />
+        <entry key="app/src/main/res/layout/fragment_converter.xml" value="0.1503623188405797" />
+        <entry key="app/src/main/res/layout/fragment_rates.xml" value="0.4358353510895884" />
+        <entry key="app/src/main/res/layout/spinner_item.xml" value="0.25677083333333334" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

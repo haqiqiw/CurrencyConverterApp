@@ -1,0 +1,30 @@
+package com.example.currencyconverterapp.data.remote.model
+
+data class Rates(
+    val AUD: Double,
+    val BRL: Double,
+    val CAD: Double,
+    val CHF: Double,
+    val CNY: Double,
+    val DKK: Double,
+    val EUR: Double,
+    val GBP: Double,
+    val HKD: Double,
+    val IDR: Double,
+    val INR: Double,
+    val JPY: Double,
+    val KRW: Double,
+    val MXN: Double,
+    val MYR: Double,
+    val NOK: Double,
+    val NZD: Double,
+    val PLN: Double,
+    val RUB: Double,
+    val SEK: Double,
+    val SGD: Double,
+    val THB: Double,
+    val TRY: Double,
+    val TWD: Double,
+    val USD: Double,
+    val ZAR: Double
+)
