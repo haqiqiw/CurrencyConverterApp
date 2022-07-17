@@ -41,7 +41,7 @@ class ConvertViewModel @Inject constructor(
             )
             when (response) {
                 is Resource.Error -> {
-                    _uiState.value = ConvertUiState.Failure(response.message.orEmpty())
+                    _uiState.value = ConvertUiState.Failure(response.message)
                 }
                 is Resource.Success -> {
                     if (response.isSuccess) {

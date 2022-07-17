@@ -16,7 +16,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:textColorHint="@color/black"
-        android:hint="Amount">
+        android:hint="@string/amount">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etAmount"
@@ -61,7 +61,7 @@
             android:id="@+id/acTo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/usd"
+            android:text="@string/idr"
             android:textColorHint="@color/black"
             android:inputType="none" />
 

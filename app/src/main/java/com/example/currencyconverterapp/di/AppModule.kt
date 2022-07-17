@@ -1,7 +1,6 @@
 package com.example.currencyconverterapp.di
 
 import android.content.Context
-import com.example.currencyconverterapp.data.remote.service.CurrencyService
 import com.example.currencyconverterapp.util.DispatchersProvider
 import com.example.currencyconverterapp.util.ResourcesProvider
 import com.example.currencyconverterapp.util.ResourcesProviderImpl
@@ -12,11 +11,7 @@ import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.Dispatchers
-import retrofit2.Retrofit
-import retrofit2.converter.gson.GsonConverterFactory
 import javax.inject.Singleton
-
-private const val BASE_URL = "https://api.exchangerate.host"
 
 @Module
 @InstallIn(SingletonComponent::class)
@@ -24,17 +19,7 @@ class AppModule {
 
     @Singleton
     @Provides
-    fun provideCurrencyApi(): CurrencyService {
-        return Retrofit.Builder()
-            .baseUrl(BASE_URL)
-            .addConverterFactory(GsonConverterFactory.create())
-            .build()
-            .create(CurrencyService::class.java)
-    }
-
-    @Singleton
-    @Provides
-    fun provideDispatchers(currencyApi: CurrencyService): DispatchersProvider {
+    fun provideDispatchers(): DispatchersProvider {
         return object : DispatchersProvider {
             override val main: CoroutineDispatcher
                 get() = Dispatchers.Main

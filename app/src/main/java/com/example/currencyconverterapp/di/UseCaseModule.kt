@@ -13,6 +13,6 @@ abstract class UseCaseModule {
 
     @Binds
     abstract fun bindGetRatesUseCase(
-        getRatesUseCaseImpl: GetRatesUseCaseImpl
+        getRatesUseCase: GetRatesUseCaseImpl
     ): GetRatesUseCase
 }
